@@ -11,10 +11,9 @@ export default class ProductContainer extends Component {
 
     ProductItems() {
         
-        
         const data = ["aj1dior", "banned", "Shatters", "metallicpurple", "midnightnavy", "neutralgray", "obsidian","shadow", "shattered", "shatteredbackboard", "spiderman", "trophyroom"]
             return data.map(item => {
-                return <ProductItem/>
+                return <ProductItem name={item} url={"google.com"}/>
             })
     }
 
@@ -22,7 +21,7 @@ export default class ProductContainer extends Component {
         return (
             <div>
                 {this.ProductItems()}
-                <ProductItem/>
+                <ProductItem />
             </div>
         )
     }
