@@ -15,7 +15,7 @@ export default class NavigationBar extends Component {
                 <button>Products</button>
                 <button>login</button>
                 <button>Cart</button>
-                {true ? <button>Add Product</button> : null};
+                {true ? <button>Add Product</button> : null}
             </div>
         )
     }
