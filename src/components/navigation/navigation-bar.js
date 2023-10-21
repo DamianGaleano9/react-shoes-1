@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 export default class NavigationBar extends Component {
     constructor() {
         super();
@@ -17,15 +18,33 @@ export default class NavigationBar extends Component {
 
                 </NavLink>
 
+                <NavLink to="/about-us">
+                    About us
+                </NavLink>
+
                 <NavLink to="/products">
                     Products
                 </NavLink>
-          
-                <button>Logo</button>
-                <button>Products</button>
-                <button>login</button>
-                <button>Cart</button>
-                {true ? <button>Add Product</button> : null}
+
+                <NavLink to="/contact">
+                    Contact
+                </NavLink>
+
+
+                <NavLink to="/blog">
+                    blog
+                </NavLink>
+
+                <NavLink to="/login">
+                    login
+                </NavLink>
+
+                <NavLink to="/cart">
+                    Cart
+                </NavLink>
+
+
+                {false ? <button>Add Product</button> : null}
             </div>
         )
     }

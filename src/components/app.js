@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
-import ProductContainer from './products/product-container';
 import NavigationBar from './navigation/navigation-bar';
 
 
 import Home from "./pages/home";
-import Products from './pages/product-page';
+import Products from './pages/products-page';
+import Cart from './pages/cart';
+import Login from './pages/login';
+import Contact from './pages/contact';
+import Blog from './pages/blog';
+import About from './pages/about';
+
 
 export default class App extends Component {
   render() {
@@ -20,6 +25,12 @@ export default class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/products" component={Products} />
+              <Route path="/cart" component={Cart} />
+              <Route path="/login" component={Login} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/Blog" component={Blog} /> 
+              <Route path="/about" component={About} /> 
+              
 
             </Switch>
           </div>
@@ -28,9 +39,7 @@ export default class App extends Component {
 
 
 
-        <h1>Shoes App</h1>
 
-        <ProductContainer />
 
 
       </div>
