@@ -12,18 +12,18 @@ export default class ProductContainer extends Component {
             pageName: "Welcome to my eCommerce",
             isLoading: false,
             data : [
-                {name: "aj1dior", category: "Air 1"},
-                {name: "banned", category: "Air 1"},
-                {name:  "Shatters", category: "Air Force 1"}, 
-                {name: "metallicpurple", category: "Air 1"},
-                {name: "midnightnavy", category: "Air Force 1"},
-                {name: "neutralgray", category: "Air 1"},
-                {name: "obsidian", category: "Air 1"},
-                {name: "shadow", category: "Air Force 1"},
-                {name: "shattered", category: "Air 1"},
-                {name: "shatteredbackboard", category: "Air Force 1"},
-                {name: "spiderman", category: "Air Force 1"},
-                {name: "trophyroom", category: "Air 1"},
+                {name: "aj1dior", category: "Air 1" , slug: "aj1dior"},
+                {name: "banned", category: "Air 1" , slug: "banned"},
+                {name:  "Shatters", category: "Air Force 1" , slug: "Shatters"}, 
+                {name: "metallicpurple", category: "Air 1" , slug: "metallicpurple"},
+                {name: "midnightnavy", category: "Air Force 1" , slug: "midnightnavy"},
+                {name: "neutralgray", category: "Air 1" , slug: "neutralgray"},
+                {name: "obsidian", category: "Air 1" , slug: "obsidian"},
+                {name: "shadow", category: "Air Force 1" , slug: "shadow"},
+                {name: "shattered", category: "Air 1" , slug: "shattered"},
+                {name: "shatteredbackboard", category: "Air Force 1" , slug: "shatteredbackboard"},
+                {name: "spiderman", category: "Air Force 1" , slug: "spiderman"},
+                {name: "trophyroom", category: "Air 1" , slug: "trophyroom"},
 
             ]
         }
@@ -42,7 +42,7 @@ export default class ProductContainer extends Component {
 
     productsItems() {
         return this.state.data.map(item => {
-            return <ProductItem name={item.name} url={"google.com"}/>
+            return <ProductItem name={item.name} url={"google.com"} slug={item.slug}/>
         })
     }
 
