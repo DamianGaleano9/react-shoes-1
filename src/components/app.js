@@ -12,7 +12,7 @@ import Login from './pages/login';
 import Contact from './pages/contact';
 import Blog from './pages/blog';
 import About from './pages/about';
-
+import ProductDetail from './products/product-detail';
 
 export default class App extends Component {
   render() {
@@ -29,8 +29,8 @@ export default class App extends Component {
               <Route path="/login" component={Login} />
               <Route path="/contact" component={Contact} />
               <Route path="/Blog" component={Blog} /> 
-              <Route path="/about" component={About} /> 
-              
+              <Route path="/about" component={About} />
+              <Route path="/product/:slug" component={ProductDetail} />
 
             </Switch>
           </div>
