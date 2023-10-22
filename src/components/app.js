@@ -14,6 +14,8 @@ import Blog from './pages/blog';
 import About from './pages/about';
 import ProductDetail from './products/product-detail';
 import NoMatch from './pages/no-match';
+
+
 export default class App extends Component {
   render() {
     return (
