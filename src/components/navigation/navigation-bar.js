@@ -13,33 +13,33 @@ export default class NavigationBar extends Component {
         return (
             <div>
 
-                <NavLink exact to="/">
+                <NavLink exact to="/" activeClassName="nav-link-active">
                     Home
 
                 </NavLink>
 
-                <NavLink to="/about-us">
+                <NavLink to="/about-us" activeClassName="nav-link-active">
                     About us
                 </NavLink>
 
-                <NavLink to="/products">
+                <NavLink to="/products" activeClassName="nav-link-active">
                     Products
                 </NavLink>
 
-                <NavLink to="/contact">
+                <NavLink to="/contact" activeClassName="nav-link-active">
                     Contact
                 </NavLink>
 
 
-                <NavLink to="/blog">
+                <NavLink to="/blog" activeClassName="nav-link-active">
                     blog
                 </NavLink>
 
-                <NavLink to="/login">
+                <NavLink to="/login" activeClassName="nav-link-active">
                     login
                 </NavLink>
 
-                <NavLink to="/cart">
+                <NavLink to="/cart" activeClassName="nav-link-active">
                     Cart
                 </NavLink>
 
