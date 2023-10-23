@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import axios from "axios";
 
 import NavigationBar from './navigation/navigation-bar';
 
@@ -17,28 +16,8 @@ import NoMatch from './pages/no-match';
 
 
 export default class App extends Component {
-    constructor() {
-      super();
 
-
-      this.getProductsItems = this.getProductsItems.bind(this);
-    }
-
-
-
-  getProductsItems() {
-    axios.get('http://localhost:4000/api/users')
-      .then(response => {
-        console.log(response );
-      })
-      .catch(error => {
-        console.log(error);
-
-      });
-
-  };
   render() {
-    this.getProductsItems();
     return (
       <div className='app'>
 
