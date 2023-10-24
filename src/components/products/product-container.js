@@ -48,7 +48,7 @@ export default class ProductContainer extends Component {
         
         return this.state.data.map(item => {
         console.log('response', item);
-            return ( <ProductItem name={item.products_name} url={item.products_description} slug={item.id} />
+            return ( <ProductItem key={item.products_id} name={item.products_name} url={item.products_description} slug={item.products_id} />
             );
         })
     }
