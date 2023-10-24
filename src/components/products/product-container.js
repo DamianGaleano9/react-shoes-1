@@ -45,10 +45,20 @@ export default class ProductContainer extends Component {
     }
 
     productsItems() {
-        
+
         return this.state.data.map(item => {
-        console.log('response', item);
-            return ( <ProductItem key={item.products_id} name={item.products_name} url={item.products_description} slug={item.products_id} />
+            console.log('producItem', item);
+
+            return (
+                <ProductItem
+                    key={item.products_id}
+                    name={item.products_name}
+                    description={item.products_description}
+                    slug={item.products_id}
+                    stock={item.products_stock}
+                    price={item.products_price}
+                    
+                />
             );
         })
     }
