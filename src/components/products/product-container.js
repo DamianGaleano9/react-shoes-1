@@ -52,11 +52,7 @@ export default class ProductContainer extends Component {
             return (
                 <ProductItem
                     key={item.products_id}
-                    name={item.products_name}
-                    description={item.products_description}
-                    slug={item.products_id}
-                    stock={item.products_stock}
-                    price={item.products_price}
+                    item = {item}
                     
                 />
             );
