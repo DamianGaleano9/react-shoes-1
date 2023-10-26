@@ -15,43 +15,61 @@ export default class NavigationBar extends Component {
 
 
                 <div className='left-side'>
-                    <NavLink exact to="/" activeClassName="nav-link-active">
-                        Home
 
-                    </NavLink>
+                    <div className='nav-link-wrapper'>
+                        <NavLink exact to="/" activeClassName="nav-link-active">
+                            Home
 
-                    <NavLink to="/about" activeClassName="nav-link-active">
-                        About us
-                    </NavLink>
+                        </NavLink>
+                    </div>
 
-                    <NavLink to="/products" activeClassName="nav-link-active">
-                        Products
-                    </NavLink>
+                    <div className='nav-link-wrapper'>
+                        <NavLink to="/about" activeClassName="nav-link-active">
+                            About us
+                        </NavLink>
+                    </div>
 
-                    <NavLink to="/contact" activeClassName="nav-link-active">
-                        Contact
-                    </NavLink>
+                    <div className='nav-link-wrapper'>
+                        <NavLink to="/products" activeClassName="nav-link-active">
+                            Products
+                        </NavLink>
+                    </div>
+
+
+                    <div className='nav-link-wrapper'>
+                        <NavLink to="/contact" activeClassName="nav-link-active">
+                            Contact
+                        </NavLink>
+                    </div>
+
+
                 </div>
 
                 <div className='right-side'>
-                    <NavLink to="/blog" activeClassName="nav-link-active">
-                        blog
-                    </NavLink>
 
-                    <NavLink to="/login" activeClassName="nav-link-active">
-                        login
-                    </NavLink>
 
-                    <NavLink to="/cart" activeClassName="nav-link-active">
-                        Cart
-                    </NavLink>
+                    <div className='nav-link-wrapper'>
+                        <NavLink to="/blog" activeClassName="nav-link-active">
+                            blog
+                        </NavLink>
+                    </div>
+
+
+                    <div className='nav-link-wrapper'>
+                        <NavLink to="/login" activeClassName="nav-link-active">
+                            login
+                        </NavLink>
+                    </div>
+
+                    <div className='nav-link-wrapper'>
+                        <NavLink to="/cart" activeClassName="nav-link-active">
+                            Cart
+                        </NavLink>
+                    </div>
+
+
                 </div>
 
-
-
-
-
-                {false ? <button>Add Product</button> : null}
             </div>
         )
     }
