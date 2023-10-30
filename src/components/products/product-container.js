@@ -10,12 +10,12 @@ export default class ProductContainer extends Component {
         super();
 
         this.state = {
-            pageName: "Welcome to my eCommerce",
+            pageName: "NIKE JORDAN",
             isLoading: false,
             data: []
         }
 
-        this.handleFilter = this.handleFilter.bind(this);
+        // this.handleFilter = this.handleFilter.bind(this);
 
     }
 
@@ -36,13 +36,13 @@ export default class ProductContainer extends Component {
     };
 
 
-    handleFilter(filter) {
-        this.setState({
-            data: this.state.data.filter(item => {
-                return item.category === filter
-            })
-        })
-    }
+    // handleFilter(filter) {
+    //     this.setState({
+    //         data: this.state.data.filter(item => {
+    //             return item.category === filter
+    //         })
+    //     })
+    // }
 
     productsItems() {
 
@@ -52,8 +52,8 @@ export default class ProductContainer extends Component {
             return (
                 <ProductItem
                     key={item.products_id}
-                    item = {item}
-                    
+                    item={item}
+
                 />
             );
         })
@@ -76,10 +76,11 @@ export default class ProductContainer extends Component {
                 <h2>{this.state.pageName}</h2>
 
 
-                <button onClick={() => this.handleFilter('Air 1')}>Air 1</button>
-                <button onClick={() => this.handleFilter('Air Force 1')}>Air Force 1</button>
-
-                {this.productsItems()}
+                {/* <button onClick={() => this.handleFilter('Air 1')}>Air 1</button>
+                <button onClick={() => this.handleFilter('Air Force 1')}>Air Force 1</button> */}
+                <div className="product-items-wrapper">
+                    {this.productsItems()}
+                </div>
 
             </div>
         )
