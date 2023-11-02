@@ -6,9 +6,6 @@ export default function (props) {
 
     const { products_id, products_name, products_price, products_url } = props.item
 
-
-    // const imgConverterUrl = products_url ? URL.createObjectURL(new Blob([new Uint8Array(products_url.data)])) : "";
-
     return (
         <div>
             <div className="product-item-wrapper">
@@ -18,8 +15,10 @@ export default function (props) {
                 </Link>
 
                 <div>{products_name}</div>
-                <div>{products_price}</div>
-
+                <div className="info-cart">
+                    {products_price + "€"}
+                    <button type="submit" className="btn">To Cart</button>
+                </div>
 
             </div>
 

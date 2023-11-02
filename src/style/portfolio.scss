@@ -7,9 +7,17 @@
 
 
     .product-item-wrapper {
+        display: grid;
         position: relative;
         padding: 10px; 
         margin: 20px;
-        background-color: rgb(143, 143, 143);
+        // background-color: rgb(191, 191, 191);
+
+
+        .info-cart{
+            display: flex;
+            justify-content: space-between;
+
+        }
     }
 }

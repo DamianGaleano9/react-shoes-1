@@ -14,11 +14,7 @@ export default class ProductContainer extends Component {
             isLoading: false,
             data: []
         }
-
-        // this.handleFilter = this.handleFilter.bind(this);
-
     }
-
 
 
     getProductsItems() {
@@ -35,15 +31,6 @@ export default class ProductContainer extends Component {
 
     };
 
-
-    // handleFilter(filter) {
-    //     this.setState({
-    //         data: this.state.data.filter(item => {
-    //             return item.category === filter
-    //         })
-    //     })
-    // }
-
     productsItems() {
 
         return this.state.data.map(item => {
@@ -53,7 +40,6 @@ export default class ProductContainer extends Component {
                 <ProductItem
                     key={item.products_id}
                     item={item}
-
                 />
             );
         })
@@ -72,12 +58,7 @@ export default class ProductContainer extends Component {
 
         return (
             <div>
-
                 <h2>{this.state.pageName}</h2>
-
-
-                {/* <button onClick={() => this.handleFilter('Air 1')}>Air 1</button>
-                <button onClick={() => this.handleFilter('Air Force 1')}>Air Force 1</button> */}
                 <div className="product-items-wrapper">
                     {this.productsItems()}
                 </div>
