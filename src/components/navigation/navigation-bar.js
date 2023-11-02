@@ -18,7 +18,7 @@ export default class NavigationBar extends Component {
 
                     <div className='nav-link-wrapper jordan-logo'>
                         <NavLink exact to="/" activeClassName="nav-link-active">
-                            <img src="https://ups3.s3.us-west-2.amazonaws.com/jordan-logo.png"/>
+                            <img src="https://ups3.s3.us-west-2.amazonaws.com/jordan-logo.png" />
 
                         </NavLink>
                     </div>
@@ -63,7 +63,9 @@ export default class NavigationBar extends Component {
 
                     <div className='nav-link-wrapper'>
                         <NavLink to="/cart" activeClassName="nav-link-active">
-                            Cart
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
                         </NavLink>
                     </div>
 
