@@ -12,11 +12,15 @@ export default function (props) {
     return (
         <div>
             <div className="product-item-wrapper">
-                <img src={products_url} alt={products_name} />
-                <div>{products_name}</div>
 
+                <Link to={`/product/${products_id}`}>
+                    <img src={products_url} alt={products_name} />
+                </Link>
+
+                <div>{products_name}</div>
                 <div>{products_price}</div>
-                <Link to={`/product/${products_id}`}>Link</Link>
+
+
             </div>
 
         </div>

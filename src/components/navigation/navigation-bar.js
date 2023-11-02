@@ -16,9 +16,9 @@ export default class NavigationBar extends Component {
 
                 <div className='left-side'>
 
-                    <div className='nav-link-wrapper'>
+                    <div className='nav-link-wrapper jordan-logo'>
                         <NavLink exact to="/" activeClassName="nav-link-active">
-                            Home
+                            <img src="https://ups3.s3.us-west-2.amazonaws.com/jordan-logo.png"/>
 
                         </NavLink>
                     </div>

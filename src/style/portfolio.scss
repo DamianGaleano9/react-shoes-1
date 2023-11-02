@@ -1,13 +1,15 @@
 .product-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+
 
     .product-item-wrapper {
         position: relative;
-
-        padding: 10px;
-        margin: 10px;
-        margin-left: 20px;
-        background-color: $orange;
+        padding: 10px; 
+        margin: 20px;
+        background-color: rgb(143, 143, 143);
     }
 }

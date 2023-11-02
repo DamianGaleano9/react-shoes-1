@@ -9,6 +9,14 @@
 
     .left-side {
         display: flex;
+
+
+        .jordan-logo img {
+            height: 60px;
+            width: 90px;
+            margin-top: -20px;
+        }
+
     }
 
 
@@ -19,21 +27,23 @@
     .nav-link-wrapper {
         height: 22px;
         border-bottom: 1px solid transparent;
-        transition: 0.5s ease-in-out;
         margin-right: 20px;
         text-transform: uppercase;
         font-size: 1rem;
-        
+
+
+
         a {
             color: $darkgray;
             text-decoration: none;
+
             &:hover {
                 color: black;
             }
         }
 
         &:hover {
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid transparent;
         }
 
 
