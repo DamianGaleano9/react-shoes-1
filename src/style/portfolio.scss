@@ -4,17 +4,23 @@
     justify-content: center;
     align-items: center;
     grid-gap: 10px;
-    padding-left: 500px;
+    margin-left: 500px;
+    margin-right: 0px;
 
 
     .product-item-wrapper {
-        display: grid;
+        // display: grid;
         position: relative;
         padding: 10px; 
         margin: 20px;
-        margin-right: 50px;
         // background-color: rgb(191, 191, 191);
 
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
 
         .products-name {
             padding-left: 140px;
