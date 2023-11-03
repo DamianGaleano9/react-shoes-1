@@ -14,7 +14,7 @@ export default function (props) {
                     <img src={products_url} alt={products_name} />
                 </Link>
 
-                <div>{products_name}</div>
+                <div className="products-name">{products_name}</div>
                 <div className="info-cart">
                     {products_price + "€"}
                     <button type="submit" className="btn">To Cart</button>
