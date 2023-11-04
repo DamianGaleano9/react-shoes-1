@@ -5,7 +5,7 @@ import { Axios } from "axios";
 
 function Login() {
     return(
-        <div className="container">
+        <div className="wrapper-form">
             <div className="login-form">
                 <form>
                     <h3>LOGIN</h3>
