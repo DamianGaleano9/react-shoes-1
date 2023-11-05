@@ -13,12 +13,14 @@ export default function (props) {
                 <Link to={`/product/${products_id}`}>
                     <img src={products_url} alt={products_name} />
                 </Link>
-
-                <div className="products-name">{products_name}</div>
-                <div className="info-cart">
-                    {products_price + "€"}
-                    <button type="submit" className="btn">To Cart</button>
+                <div className="description">
+                    <div className="products-name">{products_name}</div>
+                    <div className="info-cart">
+                        {products_price + "€"}
+                        <button type="submit" className="btn">To Cart</button>
+                    </div>
                 </div>
+
 
             </div>
 
