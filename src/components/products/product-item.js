@@ -16,7 +16,10 @@ export default function (props) {
                 <div className="products-name"><strong>{products_name}</strong></div>
                 <div className="info-cart">
                     {products_price + "€"}
-                    <button type="submit" className="btn">To Cart</button>
+                </div>
+                <div>
+                    <button type="submit" className="btn">BUY</button>
+
                 </div>
             </div>
 

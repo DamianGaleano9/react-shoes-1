@@ -6,7 +6,7 @@ import NavigationBar from './navigation/navigation-bar';
 
 import Home from "./pages/home";
 import Products from './pages/products-page';
-import Cart from './pages/cart';
+import Cart from './cartContent/cart';
 import Login from './pages/login';
 import Contact from './pages/contact';
 import Blog from './pages/blog';
