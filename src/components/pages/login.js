@@ -49,7 +49,7 @@ function login(){
           <label htmlFor="password">Password*</label>
           <input className="textInput" type="password" name="password" onChange={(e) => {setPassword(e.target.value)}} placeholder="Enter your Password" required />
           <input className="button" type="submit" onClick={login} value="Login" />
-          <h1 style={{color: 'red', fontSize: '15px', textAlign: 'center', marginTop: '20px'}}>{loginStatus}</h1>
+          <h1 style={{color: 'green', fontSize: '15px', textAlign: 'center', marginTop: '20px'}}>{loginStatus}</h1>
         </form>
       </div>
       <div className="login-form">

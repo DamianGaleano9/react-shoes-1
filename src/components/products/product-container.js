@@ -10,7 +10,7 @@ export default class ProductContainer extends Component {
         super();
 
         this.state = {
-            pageName: "NIKE JORDAN",
+            pageName: "",
             isLoading: false,
             data: []
         }
@@ -57,7 +57,7 @@ export default class ProductContainer extends Component {
         }
 
         return (
-            <div>
+            <div className="container-wrapper">
                 <h2>{this.state.pageName}</h2>
                 <div className="product-items-wrapper">
                     {this.productsItems()}

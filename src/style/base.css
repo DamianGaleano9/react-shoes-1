@@ -2,10 +2,15 @@ body {
   margin: 0px;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
   display: grid;
+  width: 100vw;
+  height: 100vh;
 }
 @media (min-width: 1221px) {
   .container .product-items-wrapper {
