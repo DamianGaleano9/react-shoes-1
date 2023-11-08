@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import DataProvider from './Context/data-context';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import NavigationBar from './navigation/navigation-bar';
@@ -19,26 +21,29 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className='container'>
+      <DataProvider>
+        <div className='container'>
 
-        <Router>
-          <div>
-            <NavigationBar />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/products" component={Products} />
-              <Route path="/cart" component={Cart} />
-              <Route path="/login" component={Login} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/about" component={About} />
-              <Route path="/Blog" component={Blog} />
-              <Route exact path="/product/:slug" component={ProductDetail} />
-              <Route component={NoMatch} />
-            </Switch>
-          </div>
+          <Router>
+            <div>
+              <NavigationBar />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/products" component={Products} />
+                <Route path="/cart" component={Cart} />
+                <Route path="/login" component={Login} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/about" component={About} />
+                <Route path="/Blog" component={Blog} />
+                <Route exact path="/product/:slug" component={ProductDetail} />
+                <Route component={NoMatch} />
+              </Switch>
+            </div>
 
-        </Router>
-      </div>
+          </Router>
+        </div>
+      </DataProvider>
+
     );
   }
 }
