@@ -14,7 +14,7 @@ const DataProvider = ({children}) => {
 
 
     useEffect(() => {
-        axios("http://localhost:4000/api/products").then((res) => setData(res.data));
+        axios("http://localhost:4000/api/products").then((res) => setData(res.data[0]));
     }, [])
 
 

@@ -1,0 +1,18 @@
+.car-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+.car-content img {
+  height: 120px;
+  width: 100px;
+  text-align: center;
+}
+.car-content .cart-total {
+  text-align: center;
+}
+.car-content .cart-message {
+  text-align: center;
+  margin: 40px;
+}/*# sourceMappingURL=cart-content.css.map */

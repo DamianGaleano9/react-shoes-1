@@ -1,88 +1,86 @@
 [
-	[
-		{
-			"products_name": "Aj1dior",
-			"products_description": "Las zapatillas Air Jordan 1 de Jordan x Dior son el emblema definitivo de nuestro tiempo, una época en la que las líneas entre la ropa deportiva y la alta costura se difuminan.",
-			"products_id": 1,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/aj1dior.jpg",
-			"products_price": 18.344
-		},
-		{
-			"products_name": "Banned",
-			"products_description": "¿A qué se debe este nombre? Sencillamente, se supone que a Michael Jordan le prohibieron jugar con su primer par de Air Jordan de color Bred; por ello",
-			"products_id": 2,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/banned.jpg",
-			"products_price": 624
-		},
-		{
-			"products_name": "Neutralgray",
-			"products_description": "Aunque estamos acostumbrados a las Air Jordan 1 Retro High originales, es el modelo Air Jordan 85 el que ofrece la réplica más fiel de las zapatillas que llevaba Michael Jordan en 1985.",
-			"products_id": 9,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/neutralgray.jpg",
-			"products_price": 438
-		},
-		{
-			"products_name": "Metallicpurple",
-			"products_description": "El mismo año en que debutaron las Air Jordan 1, la marca Jordan lanzó un pack metalizado de cuatro modelos compuesto por el «Metallic Green», «Metallic Red», «Metallic Orange» y el «Metallic Purple».",
-			"products_id": 10,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/metallicpurple.jpg",
-			"products_price": 156
-		},
-		{
-			"products_name": "Midnightnavy",
-			"products_description": "Los paneles azul marino medianoche se encuentran recorriendo la suave parte superior blanca, mientras que un logotipo Swoosh atrevido y brillante en tono plateado ocupa un lugar central",
-			"products_id": 11,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/midnightnavy.jpg",
-			"products_price": 276
-		},
-		{
-			"products_name": "Obsidian",
-			"products_description": "Las zapatillas Air Jordan 1 High OG destacan por su referencia al alma mater de Michael Jordan (la Universidad de Carolina del Norte). Sencillamente, el modelo adopta el tono azul característico de la UNC",
-			"products_id": 12,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/obsidian.jpg",
-			"products_price": 635
-		},
-		{
-			"products_name": "Shattered",
-			"products_description": " Este modelo de color naranja cuenta la historia de un partido en el que participó MJ en su primera temporada con los Chicago Bulls.",
-			"products_id": 13,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/shattered.jpg",
-			"products_price": 2.294
-		},
-		{
-			"products_name": "Shadow",
-			"products_description": "Todo coleccionista de zapatillas serio sabe que, aparte de las colaboraciones, los modelos OG de las Jordan son los más buscados. Obviamente, esto incluye el modelo monocromático de 1985, «Shadow» unas zapatillas reeditadas por última vez en 2018.",
-			"products_id": 14,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/shadow.jpg",
-			"products_price": 638
-		},
-		{
-			"products_name": "Shatteredbackboard",
-			"products_description": "Lanzadas inicialmente durante la escalofriante campaña de 2019, las Air Jordan 1 Retro High OG mezclan acertadamente los tonos de calabaza y vainilla con el negro más intenso para crear una golosina otoñal glaseada.",
-			"products_id": 15,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/shatteredbackboard.jpg",
-			"products_price": 635
-		},
-		{
-			"products_name": "Spiderman",
-			"products_description": "Para celebrar el lanzamiento de «Spider-Man: Un nuevo universo», la marca Jordan lanzó una versión adaptada al cómic de la misma zapatilla que Miles Morales lleva durante la película",
-			"products_id": 25,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/spiderman.jpg",
-			"products_price": 1.404
-		},
-		{
-			"products_name": "trophyroom",
-			"products_description": "En 2021, Jordan Brand se asoció con Trophy Room, una boutique con sede en Orlando propiedad del hijo de Michael Jordan, Marcus Jordan, para crear una versión en tono rojo vivo de las Air Jordan 1.",
-			"products_id": 44,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/trophyroom.jpg",
-			"products_price": 2.208
-		},
-		{
-			"products_name": "unionblack",
-			"products_description": "En 2018, la marca Jordan colaboró con la boutique californiana Union LA: de la colaboración surgió uno de los mejores diseños de las Air Jordan 1 que existen.",
-			"products_id": 45,
-			"products_url": "https://ups3.s3.us-west-2.amazonaws.com/unionblack.jpg",
-			"products_price": 2.442
-		}
-	]
+	{
+		"products_name": "Aj1dior",
+		"products_description": "Las zapatillas Air Jordan 1 de Jordan x Dior son el emblema definitivo de nuestro tiempo, una época en la que las líneas entre la ropa deportiva y la alta costura se difuminan.",
+		"products_id": 1,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/aj1dior.jpg",
+		"products_price": 18.344
+	},
+	{
+		"products_name": "Banned",
+		"products_description": "¿A qué se debe este nombre? Sencillamente, se supone que a Michael Jordan le prohibieron jugar con su primer par de Air Jordan de color Bred; por ello",
+		"products_id": 2,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/banned.jpg",
+		"products_price": 624
+	},
+	{
+		"products_name": "Neutralgray",
+		"products_description": "Aunque estamos acostumbrados a las Air Jordan 1 Retro High originales, es el modelo Air Jordan 85 el que ofrece la réplica más fiel de las zapatillas que llevaba Michael Jordan en 1985.",
+		"products_id": 9,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/neutralgray.jpg",
+		"products_price": 438
+	},
+	{
+		"products_name": "Metallicpurple",
+		"products_description": "El mismo año en que debutaron las Air Jordan 1, la marca Jordan lanzó un pack metalizado de cuatro modelos compuesto por el «Metallic Green», «Metallic Red», «Metallic Orange» y el «Metallic Purple».",
+		"products_id": 10,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/metallicpurple.jpg",
+		"products_price": 156
+	},
+	{
+		"products_name": "Midnightnavy",
+		"products_description": "Los paneles azul marino medianoche se encuentran recorriendo la suave parte superior blanca, mientras que un logotipo Swoosh atrevido y brillante en tono plateado ocupa un lugar central",
+		"products_id": 11,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/midnightnavy.jpg",
+		"products_price": 276
+	},
+	{
+		"products_name": "Obsidian",
+		"products_description": "Las zapatillas Air Jordan 1 High OG destacan por su referencia al alma mater de Michael Jordan (la Universidad de Carolina del Norte). Sencillamente, el modelo adopta el tono azul característico de la UNC",
+		"products_id": 12,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/obsidian.jpg",
+		"products_price": 635
+	},
+	{
+		"products_name": "Shattered",
+		"products_description": " Este modelo de color naranja cuenta la historia de un partido en el que participó MJ en su primera temporada con los Chicago Bulls.",
+		"products_id": 13,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/shattered.jpg",
+		"products_price": 2.294
+	},
+	{
+		"products_name": "Shadow",
+		"products_description": "Todo coleccionista de zapatillas serio sabe que, aparte de las colaboraciones, los modelos OG de las Jordan son los más buscados. Obviamente, esto incluye el modelo monocromático de 1985, «Shadow» unas zapatillas reeditadas por última vez en 2018.",
+		"products_id": 14,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/shadow.jpg",
+		"products_price": 638
+	},
+	{
+		"products_name": "Shatteredbackboard",
+		"products_description": "Lanzadas inicialmente durante la escalofriante campaña de 2019, las Air Jordan 1 Retro High OG mezclan acertadamente los tonos de calabaza y vainilla con el negro más intenso para crear una golosina otoñal glaseada.",
+		"products_id": 15,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/shatteredbackboard.jpg",
+		"products_price": 635
+	},
+	{
+		"products_name": "Spiderman",
+		"products_description": "Para celebrar el lanzamiento de «Spider-Man: Un nuevo universo», la marca Jordan lanzó una versión adaptada al cómic de la misma zapatilla que Miles Morales lleva durante la película",
+		"products_id": 25,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/spiderman.jpg",
+		"products_price": 1.404
+	},
+	{
+		"products_name": "trophyroom",
+		"products_description": "En 2021, Jordan Brand se asoció con Trophy Room, una boutique con sede en Orlando propiedad del hijo de Michael Jordan, Marcus Jordan, para crear una versión en tono rojo vivo de las Air Jordan 1.",
+		"products_id": 44,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/trophyroom.jpg",
+		"products_price": 2.208
+	},
+	{
+		"products_name": "unionblack",
+		"products_description": "En 2018, la marca Jordan colaboró con la boutique californiana Union LA: de la colaboración surgió uno de los mejores diseños de las Air Jordan 1 que existen.",
+		"products_id": 45,
+		"products_url": "https://ups3.s3.us-west-2.amazonaws.com/unionblack.jpg",
+		"products_price": 2.442
+	}
 ]

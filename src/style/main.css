@@ -1,0 +1,149 @@
+body {
+  margin: 0px;
+  font-family: "Quicksand", sans-serif;
+  font-size: clamp(2em, 5vw, 5em);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 3fr));
+}
+
+.btn {
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+  background-color: #ffae6a;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  padding-top: 10px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  height: 5vh;
+  background-color: #ffae6a;
+  font-weight: 900;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgb(147, 147, 147);
+}
+.nav-wrapper .left-side {
+  display: flex;
+}
+.nav-wrapper .left-side .jordan-logo img {
+  height: 60px;
+  width: 90px;
+  margin-top: -20px;
+}
+.nav-wrapper .right-side {
+  display: flex;
+}
+.nav-wrapper .nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.nav-wrapper .nav-link-wrapper a {
+  color: #262323;
+  text-decoration: none;
+}
+.nav-wrapper .nav-link-wrapper a:hover {
+  color: black;
+}
+.nav-wrapper .nav-link-wrapper:hover {
+  border-bottom: 1px solid transparent;
+}
+.nav-wrapper .nav-link-wrapper .nav-link-active {
+  border-bottom: none;
+  color: rgb(162, 255, 62);
+}
+
+.wrapper-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper-form .login-form {
+  margin: 100px;
+  box-shadow: 0px 0px 10px rgb(147, 147, 147);
+}
+.wrapper-form .login-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  width: 150%;
+  background-color: #ffae6a;
+  padding: 0 20px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper-form .login-form form h3 {
+  text-align: center;
+}
+.wrapper-form .login-form label {
+  font-weight: bold;
+  margin-bottom: 27px;
+  text-align: center;
+}
+.wrapper-form .login-form .textInput {
+  height: 30px;
+  margin-bottom: 10px;
+  outline: none;
+}
+.wrapper-form .login-form .button {
+  width: 100%;
+  padding: 8px 30px;
+  margin-bottom: 20px;
+}
+.wrapper-form .wrapper-form .login-form .button:hover {
+  background-color: rgb(134, 205, 3);
+}
+
+.product-items-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  grid-row-gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  grid-column-gap: 75px;
+}
+.product-items-wrapper .product-item-wrapper {
+  display: grid;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.product-items-wrapper .product-item-wrapper img {
+  width: 100%;
+}
+.product-items-wrapper .product-item-wrapper .products-name {
+  display: flex;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+.product-items-wrapper .product-item-wrapper .info-cart {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding-top: 20px;
+  padding: 20px;
+}/*# sourceMappingURL=main.css.map */
