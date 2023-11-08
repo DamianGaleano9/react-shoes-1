@@ -5,12 +5,9 @@ import { Link } from "react-router-dom";
 export default function (props) {
 
     const { products_id, products_name, products_price, products_url } = props.item
-    
 
-    const buyProducts = () => {
-        console.log('compraste');
-        
-    }
+
+   
 
     return (
         <div className="product-item-wrapper">
@@ -24,7 +21,7 @@ export default function (props) {
                     {products_price + "€"}
                 </div>
                 <div>
-                    <button type="submit" className="btn" onClick={buyProducts}>BUY</button>
+                    {/* <button type="submit" className="btn" onClick={buyProducts}>BUY</button> */}
 
                 </div>
             </div>

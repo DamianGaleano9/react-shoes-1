@@ -8,18 +8,18 @@ export const dataContext = createContext();
 
 const DataProvider = ({children}) => {
     const [data, setData] = useState([]); // data
-    const [cart, setCar] = useState([]); // cart empty
+    const [cart, setCart] = useState([]); // cart empty
 
 
 
 
     useEffect(() => {
-        axios("data.json").then((res) => setData(res.data));
+        axios("http://localhost:4000/api/products").then((res) => setData(res.data));
     }, [])
 
 
-    return <dataContext.Provider value={{ data }}>{children}</dataContext.Provider>
-}
+    return <dataContext.Provider value={{ data, cart, setCart }}>{children}</dataContext.Provider>
+};
 
 
 export default DataProvider;
