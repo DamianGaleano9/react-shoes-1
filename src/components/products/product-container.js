@@ -1,72 +1,72 @@
-import React, { Component } from "react";
-import ProductItem from "./product-item";
-import axios from "axios";
+// import React, { Component } from "react";
+// import ProductItem from "./product-item";
+// import axios from "axios";
 
 
 
-export default class ProductContainer extends Component {
-    constructor() {
-        console.log('Products is render');
-        super();
+// export default class ProductContainer extends Component {
+//     constructor() {
+//         console.log('Products is render');
+//         super();
 
-        this.state = {
-            pageName: "",
-            isLoading: false,
-            data: []
-        }
-    }
-
-
-    getProductsItems() {
-        axios.get('http://localhost:4000/api/products')
-            .then(response => {
-                this.setState({
-                    data: response.data[0]
-                })
-            })
-            .catch(error => {
-                console.log(error);
-
-            });
-
-    };
-
-    productsItems() {
-
-        return this.state.data.map(item => {
-            console.log('producItem', item);
-
-            return (
-                <ProductItem
-                    key={item.products_id}
-                    item={item}
-                />
-            );
-        })
-    }
+//         this.state = {
+//             pageName: "",
+//             isLoading: false,
+//             data: []
+//         }
+//     }
 
 
-    componentDidMount() {
-        this.getProductsItems();
-    }
+//     getProductsItems() {
+//         axios.get('http://localhost:4000/api/products')
+//             .then(response => {
+//                 this.setState({
+//                     data: response.data[0]
+//                 })
+//             })
+//             .catch(error => {
+//                 console.log(error);
 
-    render() {
+//             });
 
-        if (this.state.isLoading) {
-            return <div>Loading...</div>
-        }
+//     };
 
-        return (
-            <div className="container-wrapper">
-                <h2>{this.state.pageName}</h2>
-                <div className="product-items-wrapper">
-                    {this.productsItems()}
-                </div>
+//     productsItems() {
 
-            </div>
-        )
-    }
-}
+//         return this.state.data.map(item => {
+//             console.log('producItem', item);
+
+//             return (
+//                 <ProductItem
+//                     key={item.products_id}
+//                     item={item}
+//                 />
+//             );
+//         })
+//     }
+
+
+//     componentDidMount() {
+//         this.getProductsItems();
+//     }
+
+//     render() {
+
+//         if (this.state.isLoading) {
+//             return <div>Loading...</div>
+//         }
+
+//         return (
+//             <div className="container-wrapper">
+//                 <h2>{this.state.pageName}</h2>
+//                 <div className="product-items-wrapper">
+//                     {this.productsItems()}
+//                 </div>
+
+//             </div>
+//         )
+//     }
+// }
 
 // import React, { useContext } from "react";
 // import { dataContext } from "../Context/data-context";

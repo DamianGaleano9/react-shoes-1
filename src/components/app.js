@@ -7,8 +7,8 @@ import NavigationBar from './navigation/navigation-bar';
 
 
 import Home from "./pages/home";
-import Products from './pages/products-page';
-import Cart from './cartContent/cart';
+// import Products from './pages/products-page';
+import Cart from './cart/cart-content';
 import Login from './pages/login';
 import Contact from './pages/contact';
 import Blog from './pages/blog';
@@ -29,7 +29,7 @@ export default class App extends Component {
               <NavigationBar />
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route path="/products" component={Products} />
+                {/* <Route path="/products" component={Products} /> */}
                 <Route path="/cart" component={Cart} />
                 <Route path="/login" component={Login} />
                 <Route path="/contact" component={Contact} />
