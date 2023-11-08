@@ -1,11 +1,10 @@
 import React from "react";
+import CartElements from "./cart-element";
+
 
 const CartContent =() => {
-    return(
-        <div>
-            <h2>Something for my car</h2>
-        </div>
-    )
+    return <CartElements />;
+        
 }
 
 export default CartContent
