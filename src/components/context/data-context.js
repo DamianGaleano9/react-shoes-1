@@ -7,13 +7,17 @@ export const dataContext = createContext();
 
 
 const DataProvider = ({children}) => {
-    const [data, setData] = useState([])
+    const [data, setData] = useState([]) 
+    const [cart, setCar] = useState([]) 
+
 
 
 
     useEffect(() => {
-        axios("http://localhost:4000/api/products.json").then((res) => setData(res.data));
+        axios(data.json).then((res) => setData(res.data));
     }, [])
+
+    
     return <dataContext.Provider value={{ data }}>{children}</dataContext.Provider>
 }
 

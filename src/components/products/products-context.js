@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { dataContext } from "../Context/data-context";
 
 
-const ProductContainer = () => {
+const Products = () => {
     const {data} = useContext(dataContext);
 
     return data.map((product) => {
@@ -17,4 +17,4 @@ const ProductContainer = () => {
     })
 }
 
-export default ProductContainer;
+export default Products;

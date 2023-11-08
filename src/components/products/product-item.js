@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function (props) {
 
     const { products_id, products_name, products_price, products_url } = props.item
-
+    
 
     const buyProducts = () => {
         console.log('compraste');
