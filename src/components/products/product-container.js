@@ -67,3 +67,34 @@ export default class ProductContainer extends Component {
         )
     }
 }
+
+// import React, { useContext } from "react";
+// import { dataContext } from "../Context/data-context";
+// import ProductItem from "./product-item";
+
+// const ProductContainer = () => {
+//   const { data, isLoading } = useContext(dataContext);
+
+//   if (isLoading) {
+//     return <div>Loading...</div>;
+//   }
+
+//   return (
+//     <div className="container-wrapper">
+//       <h2>{data.pageName}</h2>
+//       <div className="product-items-wrapper">
+//         {data.data.map((item) => (
+//           <ProductItem key={item.products_id} item={item} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ProductContainer;
+
+
+
+
+
+
