@@ -15,6 +15,7 @@ const DataProvider = ({ children }) => {
 
     useEffect(() => {
         axios("http://localhost:4000/api/products").then((res) => setData(res.data[0]));
+        // 'http://localhost:4000/api/products'
     }, [])
 
 
@@ -23,7 +24,7 @@ const DataProvider = ({ children }) => {
         const productrepeat = cart.find((item) => item.products_id === product.products_id);
 
         if (productrepeat) {
-            setCart(cart.map((item) => (item.id === product.products_id ? {
+            setCart(cart.map((item) => (item.products_id === product.products_id ? {
                 ...product, products_quanty:
                     productrepeat.products_quanty + 1
             } : item)));

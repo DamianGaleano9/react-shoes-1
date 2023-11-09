@@ -14,7 +14,7 @@ const CartElements = () => {
         <img src={product.products_url} alt="product-card" />
 
         <h4 className='name'>{product.products_price}</h4>
-        <CartItemCounter quanty={product.products_quanty} />
+        <CartItemCounter product={product} />
         <h3 className='name'>{product.products_name}</h3>
 
       </div>
