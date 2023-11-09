@@ -21,4 +21,4 @@ const CartContent = () => {
     )
 };
 
-export default CartContent
+export default CartContent;

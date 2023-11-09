@@ -10,7 +10,7 @@ const CartElements = () => {
 
   return cart.map((product) => {
     return (
-      <div className='cart-content' key={product.products_id}>
+      <div className='cart-container' key={product.products_id}>
         <img src={product.products_url} alt="product-card" />
 
         <h3 className='name'>{product.products_name}</h3>

@@ -63,7 +63,9 @@ export default class NavigationBar extends Component {
 
                     <div className='nav-link-wrapper'>
                         <NavLink to="/cart" activeClassName="nav-link-active">
-                            <h1>🛒</h1>
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
                         </NavLink>
                     </div>
 
