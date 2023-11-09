@@ -8,19 +8,21 @@ const Products = (product) => {
     const { data, cart, setCart } = useContext(dataContext);
 
     const buyProducts = (product) => {
-        console.log('me compraste');
         setCart([...cart, product]);
 
     }
 
     return data.map((product) => {
         return (
-            <div className="container">
-                <div className="container-images" key={product.products_id}>
-                    <img src={product.products_url} alt="img" />
-                    <h3>{product.products_name}</h3>
-                    <h4>{product.products_price}</h4>
-                    <button onClick={() => buyProducts(product)}>Buy</button>
+            <div className="container-wrapper">
+                <div className="product-items-wrapper" key={product.products_id}>
+                    <div className="product-item-wrapper">
+                        <img className="" src={product.products_url} alt="img" />
+                        <h3>{product.products_name}</h3>
+                        <h4>{product.products_price}</h4>
+                        <button onClick={() => buyProducts(product)}>Buy</button>
+                    </div>
+
                 </div>
             </div>
 
