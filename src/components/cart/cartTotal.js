@@ -7,7 +7,7 @@ const CartTotal = () => {
   const { cart } = useContext(dataContext);
 
 
-  const total = cart.reduce((acc, el)=> acc + el.products_price, 0);
+  const total = cart.reduce((acc, el)=> acc + el.products_price * el.products_quanty, 0);
 
   return (
     <div className='cart-total'>

@@ -13,9 +13,9 @@ const CartElements = () => {
       <div className='cart-content' key={product.products_id}>
         <img src={product.products_url} alt="product-card" />
 
-        <h4 className='name'>{product.products_price}</h4>
-        <CartItemCounter product={product} />
         <h3 className='name'>{product.products_name}</h3>
+        <CartItemCounter product={product} />
+        <h4 className='price'>{product.products_price * product.products_quanty}$</h4>
 
       </div>
     );
