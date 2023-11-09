@@ -1,48 +1,60 @@
-.product-items-wrapper {
-    width: 100%;
+.container-wrapper {
+
     display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(3, 0fr);
-    grid-row-gap: 20px;
-    justify-content: center;
-    justify-items: center;
-    // grid-gap: 10px;
-    grid-column-gap: 75px;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 
-
-    .product-item-wrapper {
-        display: grid;
-        // position: relative;
-        // padding: 10px;
-        // margin: 20px;
-        // background-color: rgb(191, 191, 191);
-        width: 250px;
-        display: flex;
-        flex-direction: column;
-
-        img {
-            // max-width: 300px;
-            // height: auto;
-            width: 100%;
-        }
-
-
-        .products-name {
-            display: flex;
-            padding-left: 100px;
-            padding-bottom: 20px;
-        }
-
-
-        .info-cart{
-            display: flex;
-            width: 150px;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            padding-top: 20px;
-            padding: 20px;
-
-        }
-    }
 }
+
+
+
+// }
+
+
+    // width: 100%;
+    // display: grid;
+    // // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: repeat(3, 0fr);
+    // grid-row-gap: 20px;
+    // justify-content: center;
+    // justify-items: center;
+    // // grid-gap: 10px;
+    // grid-column-gap: 75px;
+
+
+    // .product-item-wrapper {
+    //     display: grid;
+    //     // position: relative;
+    //     // padding: 10px;
+    //     // margin: 20px;
+    //     // background-color: rgb(191, 191, 191);
+    //     width: 250px;
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     img {
+    //         // max-width: 300px;
+    //         // height: auto;
+    //         width: 100%;
+    //     }
+
+
+    //     .products-name {
+    //         display: flex;
+    //         padding-left: 100px;
+    //         padding-bottom: 20px;
+    //     }
+
+
+    //     .info-cart{
+    //         display: flex;
+    //         width: 150px;
+    //         align-items: center;
+    //         justify-content: center;
+    //         font-size: 1rem;
+    //         padding-top: 20px;
+    //         padding: 20px;
+
+    //     }
+    // }

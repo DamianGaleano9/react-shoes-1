@@ -22,7 +22,7 @@ const CartItemCounter = ({ product }) => {
     return (
         <Fragment>
             <p className='counter-button' onClick={decrease}>-</p>
-            <p>{product.products_quanty}1</p>
+            <p>{product.products_quanty}</p>
             <p className='counter-button' onClick={() => buyProducts(product)}>+</p>
         </Fragment>
     )

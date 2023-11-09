@@ -10,7 +10,7 @@ const Products = (product) => {
 
     return data.map((product) => {
         return (
-            <div className="container-wrapper" key={product.products_id}>
+            <div className="container" key={product.products_id}>
                 <div className="product-items-wrapper" >
                     <div className="product-item-wrapper">
                         <img className="" src={product.products_url} alt="img" />
