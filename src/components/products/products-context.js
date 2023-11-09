@@ -8,8 +8,16 @@ const Products = (product) => {
     const { data, cart, setCart } = useContext(dataContext);
 
     const buyProducts = (product) => {
-        setCart([...cart, product]);
+        // setCart([...cart, product]);
+    const productrepeat = cart.find((item) => item.products_id === product.products_id);
 
+
+    if(productrepeat) {
+        setCart(cart.map((item) => (item.id  === product.products_id ? { ...product, products_quanty:
+            productrepeat.products_quanty + 1 } : item)));
+     } else {
+        setCart([...cart, product]);
+     }
     }
 
     return data.map((product) => {
