@@ -44,13 +44,24 @@
     .counter-button {
         cursor: pointer;
     }
-
-
     .counter-button:hover {
+            color: greenyellow;
+            font-size: .5em;
+            font-weight: bold;
+        }
+
+    .cart-button-delete span {
+        cursor: pointer;
+    }
+
+
+    .cart-button-delete span:hover {
         color: greenyellow;
-        font-size: .5em;
+        font-size: .9em;
         font-weight: bold;
     }
+
+    
 
 }
 
