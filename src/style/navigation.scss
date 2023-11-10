@@ -22,7 +22,18 @@
 
 
     .right-side {
+        
         display: flex;
+
+        .mini-cart span {
+
+            height: 20px;
+            width: 20px;
+            border-radius: 999px;
+            top: 0;
+            background-color: blue;
+        
+        }
     }
 
     .nav-link-wrapper {
@@ -52,6 +63,8 @@
             border-bottom: none;
             color: rgb(162, 255, 62);
         }
+
+      
     }
 
 }

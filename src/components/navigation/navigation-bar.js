@@ -49,7 +49,7 @@ const NavigationBar = () => {
     
         <div className='nav-link-wrapper'>
           <NavLink to="/cart" activeClassName="nav-link-active">
-            <span className="material-symbols-outlined">
+            <span className="mini-cart material-symbols-outlined">
               shopping_cart
               {cart.length > 0 ? <TotalItems /> : null}
             </span>

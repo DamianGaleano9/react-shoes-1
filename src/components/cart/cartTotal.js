@@ -11,7 +11,7 @@ const CartTotal = () => {
 
   return (
     <div className='cart-total'>
-      <h3>Total to pay: {total} $</h3>
+      <h3>Total to pay: {total} €</h3>
     </div>
   )
 }
