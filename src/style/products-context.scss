@@ -1,0 +1,82 @@
+.products-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 0fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 75px;
+        justify-content: center;
+
+        .products {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            img {
+                width: 100%;
+            }
+
+
+            p {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            button {
+                border: none;
+                border-radius: 3px;
+                padding: 5px 10px;   
+                cursor: pointer; 
+            }
+        }
+
+    }
+
+
+//     .gallery {
+//          display: grid;
+//             gap: 1rem;
+//             grid-auto-rows: 22rem;
+//             grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+//             background-color: gray;// width: 100%;
+
+
+//         .card {
+
+
+//             .items {
+//                 overflow: hidden;
+//                 padding: 1rem;
+//             }
+//             .card-img {
+//                 width: 100%;
+//             }
+
+//             .card-title {
+//                 text-align: center;
+//             }
+
+//         }
+
+//     }
+
+// }
+
+
+// div > img {
+//     border-radius: 8px;
+//     width: 100%;
+//     height: auto;
+// }
+
+
+// div .card {
+//     display: grid;
+//     grid-template-columns:repeat(auto-fit,
+//     minmax(15o0px, 1fr)
+
+//     );
+//     gap: 32px
+// }

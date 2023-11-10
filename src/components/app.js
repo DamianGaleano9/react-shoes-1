@@ -22,7 +22,7 @@ export default class App extends Component {
   render() {
     return (
       <DataProvider>
-        <div className='container'>
+        <div className='containere'>
 
           <Router>
             <div>

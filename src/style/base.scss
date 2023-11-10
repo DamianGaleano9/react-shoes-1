@@ -4,18 +4,29 @@
 
 
 body {
-   // margin: 0px;
+   margin: 0px;
    font-family: "Quicksand", sans-serif;
    font-size: 1rem;
+   line-height: 1.8;
    // font-size: clamp(2em, 5vw, 5em);
-   // margin: 0;
-   // padding: 0;
+   padding: 0;
    // overflow-x: hidden;
    // box-sizing: border-box;
 
 
 }
 
+.container {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+// .container {
+//    display: grid;
+// }
 
 // h3, h4, p  {
 //    font-size: 1em;
