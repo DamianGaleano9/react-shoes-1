@@ -1,10 +1,14 @@
 .products-container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 0fr);
-        grid-row-gap: 20px;
-        grid-column-gap: 75px;
-        justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 0;
+    grid-row-gap: 20px;
+    grid-column-gap: 75px;
+    justify-content: center;
+    margin: 20px;
+
+
 
         .products {
             width: 200px;
@@ -16,6 +20,7 @@
 
             img {
                 width: 100%;
+                height: auto;
             }
 
 

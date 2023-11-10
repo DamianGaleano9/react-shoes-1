@@ -12,7 +12,7 @@ const TotalItems = () => {
   const itemsQuanty = cart.reduce((acc, el) => acc + el.products_quanty, 0);
   return (
     <div className='total-number'>
-      <span class="material-symbols-outlined">
+      <span class="material-symbols-outlined button-total">
         {itemsQuanty}
       </span>
     </div>
