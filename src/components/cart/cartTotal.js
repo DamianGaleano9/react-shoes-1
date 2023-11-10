@@ -1,6 +1,8 @@
 import React from 'react'
 import { useContext } from 'react';
 import { dataContext } from '../Context/data-context';
+import  CheckoutForm  from '../checkout-form';
+
 
 const CartTotal = () => {
 
@@ -12,6 +14,7 @@ const CartTotal = () => {
   return (
     <div className='cart-total'>
       <h3>Total to pay: {total} €</h3>
+      <CheckoutForm/>
     </div>
   )
 }

@@ -33,7 +33,7 @@ const CartElements = () => {
         <CartItemCounter product={product} />
         <h4 className='price'>{product.products_price * product.products_quanty}€</h4>
         <h3 className='cart-button-delete' onClick={() => deleteProduct(product.products_id)}>
-          <span class="material-symbols-outlined">
+          <span className="material-symbols-outlined">
             delete
           </span>
         </h3>
