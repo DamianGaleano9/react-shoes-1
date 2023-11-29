@@ -1,0 +1,43 @@
+.payment {
+    display: grid;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    // background-color: rgb(228, 228, 228);
+    // box-shadow: 0px 0px 20px rgb(147, 147, 147);
+    align-items: center;
+    max-width: 90%;
+    border-radius: 5px;
+    height: 150px;
+    max-width: 100%;
+    margin: 50px 10px;
+    padding: 20px;
+
+}
+
+
+    .back {
+        border-radius: 2rem;
+        background-color: rgb(203, 203, 203);
+        border: none;
+        height: 80%;
+        font-family: 'shonen punk v2', sans-serif;
+        box-shadow: 0px 0px 20px rgb(187, 187, 187);
+
+    }
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.payment h2 {
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}

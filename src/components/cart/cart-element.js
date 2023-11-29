@@ -26,17 +26,33 @@ const CartElements = () => {
 
   return cart.map((product) => {
     return (
-      <div className='cart-container' key={product.products_id}>
+      <div className='cart-element' key={product.products_id}>
+        <div className='img'>
         <img src={product.products_url} alt="product-card" />
-
+          
+        </div>
+        <div className='name'>
         <h3 className='name'>{product.products_name}</h3>
+          
+        </div>
+        <div className='counter'>
         <CartItemCounter product={product} />
-        <h4 className='price'>{product.products_price * product.products_quanty}€</h4>
-        <h3 className='cart-button-delete' onClick={() => deleteProduct(product.products_id)}>
+          
+        </div>
+        
+        <div className='price'>
+        <h4>{product.products_price * product.products_quanty}€</h4>
+          
+        </div>
+        
+        <div className='trash'>
+          <h3 className='cart-button-delete' onClick={() => deleteProduct(product.products_id)}>
           <span className="material-symbols-outlined">
             delete
           </span>
         </h3>
+        </div>
+        
       </div>
     );
   });

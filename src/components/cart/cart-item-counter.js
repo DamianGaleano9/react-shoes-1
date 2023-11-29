@@ -9,14 +9,15 @@ import { dataContext } from "../Context/data-context";
 const CartItemCounter = ({ product }) => {
     const { cart, setCart, buyProducts } = useContext(dataContext);
 
-    const decrease = () => {  
+    const decrease = () => {
         const productrepeat = cart.find((item) => item.products_id === product.products_id);
-        
+
 
         productrepeat.products_quanty !== 1 &&
-        setCart(cart.map((item) => (item.products_id === product.products_id ? {
-            ...product, products_quanty:
-                productrepeat.products_quanty - 1 } : item)));
+            setCart(cart.map((item) => (item.products_id === product.products_id ? {
+                ...product, products_quanty:
+                    productrepeat.products_quanty - 1
+            } : item)));
     };
 
     return (

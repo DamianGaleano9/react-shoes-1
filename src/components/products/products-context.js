@@ -10,8 +10,8 @@ const Products = () => {
                 <div className="products" key={product.products_id}>
                     <img className="product" src={product.products_url} alt="img" />
                     <h3 className="card-title">{product.products_name}</h3>
-                    <h4>{product.products_price} €</h4>
-                    <button className="card-title" onClick={() => buyProducts(product)}>
+                    <h4>{product.products_price}€</h4>
+                    <button className="bounce-top" onClick={() => buyProducts(product)}>
                         Buy
                     </button>
                 </div>

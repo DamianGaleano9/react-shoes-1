@@ -12,45 +12,27 @@ const NavigationBar = () => {
         <div className='nav-link-wrapper jordan-logo'>
           <NavLink exact to="/" activeClassName="nav-link-active">
             <img src="https://ups3.s3.us-west-2.amazonaws.com/jordan-logo.png" />
+
           </NavLink>
         </div>
 
-        <div className='nav-link-wrapper'>
-          <NavLink to="/about" activeClassName="nav-link-active">
-            About us
-          </NavLink>
-        </div>
 
-        <div className='nav-link-wrapper'>
-          <NavLink to="/products" activeClassName="nav-link-active">
-            Products
-          </NavLink>
-        </div>
-
-        <div className='nav-link-wrapper'>
-          <NavLink to="/contact" activeClassName="nav-link-active">
-            Contact
-          </NavLink>
-        </div>
       </div>
 
       <div className='right-side'>
-        <div className='nav-link-wrapper'>
-          <NavLink to="/blog" activeClassName="nav-link-active">
-            blog
-          </NavLink>
-        </div>
+
 
         <div className='nav-link-wrapper'>
           <NavLink to="/login" activeClassName="nav-link-active">
             login
           </NavLink>
         </div>
-    
+
         <div className='nav-link-wrapper'>
           <NavLink to="/cart" activeClassName="nav-link-active">
-            <span className="mini-cart material-symbols-outlined">
-              shopping_cart
+            <span className="car-number">
+              <i className="fa-solid fa-cart-shopping">CART</i>
+
               {cart.length > 0 ? <TotalItems /> : null}
             </span>
           </NavLink>

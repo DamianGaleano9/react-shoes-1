@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
@@ -12,10 +13,8 @@ const DataProvider = ({ children }) => {
 
 
 
-
     useEffect(() => {
         axios("http://localhost:4000/api/products").then((res) => setData(res.data[0]));
-        // 'http://localhost:4000/api/products'
     }, [])
 
 

@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
-function login(){
+function login() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -17,9 +17,9 @@ function login(){
     }).then((response) => {
       // setRegisterStatus(response);
       // console.log(response);
-      if(response.data.message){
+      if (response.data.message) {
         setRegisterStatus(response.data.message);
-      }else{
+      } else {
         setRegisterStatus("ACCOUNT CREATED SUCCESSFULLY");
       }
     })
@@ -31,38 +31,38 @@ function login(){
       username: username,
       password: password,
     }).then((response) => {
-      if(response.data.message){
+      if (response.data.message) {
         setLoginStatus(response.data.message);
-      }else{
+      } else {
         setLoginStatus(response.data[0].email);
       }
     })
   }
 
-  return(
+  return (
     <div className="wrapper-form">
       <div className="login-form">
         <form>
           <h4>Login Here</h4>
           <label htmlFor="username">Username*</label>
-          <input className="textInput" type="text" name="username" onChange={(e) => {setUsername(e.target.value)}} placeholder="Enter your Username" required />
+          <input className="textInput" type="text" name="username" onChange={(e) => { setUsername(e.target.value) }} placeholder="Enter your Username" required />
           <label htmlFor="password">Password*</label>
-          <input className="textInput" type="password" name="password" onChange={(e) => {setPassword(e.target.value)}} placeholder="Enter your Password" required />
+          <input className="textInput" type="password" name="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Enter your Password" required />
           <input className="button" type="submit" onClick={login} value="Login" />
-          <h1 style={{color: 'green', fontSize: '15px', textAlign: 'center', marginTop: '20px'}}>{loginStatus}</h1>
+          <h1 style={{ color: 'green', fontSize: '15px', textAlign: 'center', marginTop: '20px' }}>{loginStatus}</h1>
         </form>
       </div>
       <div className="login-form">
         <form>
           <h4>Register Here</h4>
           <label htmlFor="email">Email Address*</label>
-          <input className="textInput" type="text" name="email" onChange={(e) => {setEmail(e.target.value)}} placeholder="Enter your Email Address" required />
+          <input className="textInput" type="text" name="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Enter your Email Address" required />
           <label htmlFor="username">Username*</label>
-          <input className="textInput" type="username" name="username" onChange={(e) => {setUsername(e.target.value)}} placeholder="Enter your Username" required />
+          <input className="textInput" type="username" name="username" onChange={(e) => { setUsername(e.target.value) }} placeholder="Enter your Username" required />
           <label htmlFor="password">Password*</label>
-          <input className="textInput" type="password" name="password" onChange={(e) => {setPassword(e.target.value)}} placeholder="Enter your Password" required />
+          <input className="textInput" type="password" name="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Enter your Password" required />
           <input className="button" type="submit" onClick={register} value="Create an account" />
-          <h1 style={{fontSize: '15px', textAlign: 'center', marginTop: '20px'}}>{registerStatus}</h1>
+          <h1 style={{ fontSize: '15px', textAlign: 'center', marginTop: '20px' }}>{registerStatus}</h1>
         </form>
       </div>
     </div>
